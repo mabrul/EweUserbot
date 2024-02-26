@@ -65,7 +65,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/a918a9482ff5ae77af564.jpg", "photoyins.jpg"
+            "https://telegra.ph/file/a918a9482ff5ae77af564.jpg", "logo.jpg"
         )
         ll = await Uputt.upload_file(photo)
         try:
@@ -189,7 +189,7 @@ async def autobot():
                 )
                 await set_var_value("BOT_TOKEN", token)
                 await set_var_value("BOT_USERNAME", f"{username}")
-                os.execvp(sys.executable, [sys.executable, "-m", "AyiinXd"])
+                os.execvp(sys.executable, [sys.executable, "-m", "Uputt"])
             else:
                 LOGS.info(
                     "Silakan Hapus Beberapa Bot Telegram Anda di @Botfather atau Set Var BOT_TOKEN dengan token bot"
@@ -245,7 +245,7 @@ async def autobot():
             )
             await set_var_value("BOT_TOKEN", token)
             await set_var_value("BOT_USERNAME", f"{username}")
-            os.execvp(sys.executable, [sys.executable, "-m", "AyiinXd"])
+            os.execvp(sys.executable, [sys.executable, "-m", "Uputt"])
         else:
             LOGS.info(
                 "Silakan Hapus Beberapa Bot Telegram Anda di @Botfather atau Set Var BOT_TOKEN dengan token bot"
@@ -313,7 +313,7 @@ def remove_plugin(shortname):
         except BaseException:
             name = f"Uputt.modules.{shortname}"
 
-            for i in reversed(range(len(Ayiin._event_builders))):
+            for i in reversed(range(len(Uputt._event_builders))):
                 ev, cb = Uputt._event_builders[i]
                 if cb.__module__ == name:
                     del Uputt._event_builders[i]
