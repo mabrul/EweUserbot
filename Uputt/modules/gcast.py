@@ -15,6 +15,7 @@ import asyncio
 from telethon.errors import FloodWaitError
 
 from Uputt import CMD_HELP
+from Uputt.events import register
 from Uputt.iamuput import UputtChanger, uputt_cmd, eod, eor
 from Uputt.database.bl_gcast import add_gcast, cek_gcast, del_gcast
 
@@ -112,6 +113,7 @@ Ketik `{cmd}addbl` di grup yang ingin anda tambahkan ke daftar blacklist gcast."
 
 
 @uputt_cmd(pattern="addbl(?:\\s|$)([\\s\\S]*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^Addbl$")
 async def add(event):
     me = await event.client.get_me()
     BLACKLIST_GCAST = UputtChanger(cek_gcast(me.id))
@@ -130,6 +132,7 @@ async def add(event):
 
 
 @uputt_cmd(pattern="delbl(?:\\s|$)([\\s\\S]*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^delbl$")
 async def _(event):
     xxx = await eor(event, '**Memproses...**')
     me = await event.client.get_me()
@@ -171,4 +174,4 @@ CMD_HELP.update(
         \n  »  **Kegunaan : **Mengirim Global Broadcast pesan ke Seluruh Private Massage / PC yang masuk. (Bisa Mengirim Media/Sticker)\
     "
     }
-)
+                    )
