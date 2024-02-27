@@ -61,6 +61,7 @@ GCAST_BLACKLIST = [
     -1001287188817,  # Kazu Support
     -1001986858575,  # Gokil Support
     -1001876092598,  # Lumiere Support
+    -1001861414061,  # Pesulap
 ]
 
 
