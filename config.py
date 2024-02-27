@@ -122,7 +122,7 @@ class Config(object):
     GITHUB_ACCESS_TOKEN = getenv("GITHUB_ACCESS_TOKEN", None)
 
     # Custom (forked) repo URL for updater.
-    UPSTREAM_REPO_URL = getenv("UPSTREAM_REPO_URL", "https://github.com/AyiinXd/Ayiin-Userbot.git")
+    UPSTREAM_REPO_URL = getenv("UPSTREAM_REPO_URL", "https://github.com/iamuput/Uputt-Userbot.git")
 
     # Custom Name Sticker Pack
     S_PACK_NAME = getenv("S_PACK_NAME", None)
