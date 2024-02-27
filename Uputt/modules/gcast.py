@@ -36,8 +36,8 @@ async def gcast(event):
         reply = await event.get_reply_message()
         msg = reply.text
     else:
-        return await eod(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await eor(event, "`Sedang Mengirim Mohon Bersabar... Kalo Limit Jangan Salahin Saya...`")
+        return await eod(event, "**Pesannya mana anjjj**")
+    kk = await eor(event, "`Sabar kontttolll, lagi kirimm gikesann luu ni monyet`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -67,8 +67,8 @@ async def gucast(event):
         reply = await event.get_reply_message()
         msg = reply.text
     else:
-        return await eod(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await eor(event, "`Sedang Mengirim Mohon Bersabar... Kalo Limit Jangan Salahin Saya...`")
+        return await eod(event, "**Pesannya mana anjjj**")
+    kk = await eor(event, "`Sabar kontttolll, lagi kirimm gikesann luu ni monyet...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
