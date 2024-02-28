@@ -37,12 +37,12 @@ async def gen_thumb(thumbnail, title, videoid, ctitle):
         f"Uputt/resources/temp{videoid}.png")
     img = Image.open(f"Uputt/resources/temp{videoid}.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("AyiinXd/resources/Roboto-Light.ttf", 52)
-    font2 = ImageFont.truetype("AyiinXd/resources/Roboto-Medium.ttf", 76)
+    font = ImageFont.truetype("Uputt/resources/Roboto-Light.ttf", 52)
+    font2 = ImageFont.truetype("Uputt/resources/Roboto-Medium.ttf", 76)
     draw.text((27, 538), f"Playing on {ctitle[:15]}...", (0, 0, 0), font=font)
     draw.text((27, 612), f"{title[:20]}...", (0, 0, 0), font=font2)
-    img.save(f"AyiinXd/resources/final{videoid}.png")
-    os.remove(f"AyiinXd/resources/temp{videoid}.png")
-    os.remove(f"AyiinXd/resources/thumb{videoid}.png")
-    final = f"AyiinXd/resources/final{videoid}.png"
+    img.save(f"Uputt/resources/final{videoid}.png")
+    os.remove(f"Uputt/resources/temp{videoid}.png")
+    os.remove(f"Uputt/resources/thumb{videoid}.png")
+    final = f"Uputt/resources/final{videoid}.png"
     return final
