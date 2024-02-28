@@ -16,9 +16,6 @@ import time
 from datetime import datetime
 from secrets import choice
 
-from telethon.tl.custom import Button
-from telethon.tl.types import MessageButton
-
 from Uputt import CMD_HELP, StartTime
 from Uputt.events import register
 
@@ -94,7 +91,7 @@ async def uputt(ganteng):
 
 @register(incoming=True, from_users=DEVS, pattern=r"^kimak$")
 async def tes(sigoblok):
-    await sigoblok.send_reaction('🥹')
+    await sigoblok.respond('🥹')
 
 
 # ========================×========================
