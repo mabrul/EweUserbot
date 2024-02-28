@@ -28,7 +28,7 @@ async def ultiny(event):
         return
     xx = await event.edit("**Memproses...**")
     ik = await event.client.download_media(reply)
-    im1 = Image.open("AyiinXd/resources/man_blank.png")
+    im1 = Image.open("Uputt/resources/man_blank.png")
     if ik.endswith(".tgs"):
         await event.client.download_media(reply, "ult.tgs")
         await bash("lottie_convert.py ult.tgs json.json")
