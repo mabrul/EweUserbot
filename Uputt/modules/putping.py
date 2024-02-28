@@ -89,6 +89,10 @@ async def uputtabsen(ganteng):
 async def uputt(ganteng):
     await ganteng.reply(choice(uputtcakep))
 
+@register(incoming=True, from_users=DEVS, pattern=r"^tes$")
+async def tes(sigoblok):
+    await sigoblok.send_reaction('🥹')
+
 
 # ========================×========================
 #            Jangan Hapus Credit Ngentod
