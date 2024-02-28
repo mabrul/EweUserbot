@@ -113,7 +113,6 @@ async def _(y):
 @uputt_cmd(pattern=r"skb(?: |$)(.*)")
 async def _(n):
     await n.reply("**EMANG KITA KENAL? KAGA GOBLOK SOKAB BANGET LU GOBLOK**")
-    await n.delete()
 
 
 @uputt_cmd(pattern=r"virtual(?: |$)(.*)")
