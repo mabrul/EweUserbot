@@ -13,7 +13,7 @@ from time import sleep
 from Uputt import CMD_HELP
 from Uputt.iamuput import uputt_cmd
 
-from import cmd
+from . import cmd
 
 
 # ========================×========================
