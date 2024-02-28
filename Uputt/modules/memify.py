@@ -75,7 +75,7 @@ async def add_text_img(image_path, text):
     img_info = img.info
     image_width, image_height = img.size
     font = ImageFont.truetype(
-        font="AyiinXd/ayiin/styles/FontLord.ttf",
+        font="Uputt/iamuput/styles/FontLord.ttf",
         size=int(image_height * font_size) // 100,
     )
     draw = ImageDraw.Draw(img)
