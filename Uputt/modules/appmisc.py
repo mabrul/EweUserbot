@@ -155,7 +155,7 @@ async def apk(e):
         )
         app_details += ("\n<b>Features :</b> <a href='" +
                         app_link + "'>View in Play Store</a>")
-        app_details += "\n\n===> Support @AyiinChannel <==="
+        app_details += "\n\n===> Support @Flukosaa <==="
         await xx.edit(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await eor(
@@ -707,7 +707,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "appmisc": f"`{cmd}app`\
+        "Appmisc": f"`{cmd}app`\
 \nUsage: ketik `{cmd}app namaapp` Dan Dapatkan Detail Informasi App.\
 \n\n`.calc`\
 \nUsage: `{cmd}calc <term1><operator><term2>\nUntuk eg {cmd}calc 02*02 Atau 99*99 (Angka Nol Penting) (Minimal Dua Suku Dan Dua Digit).\
