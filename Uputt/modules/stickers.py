@@ -334,8 +334,8 @@ async def _(event):
     xnxx = await eor(event, f"`{choice(KANGING_STR)}`")
     reply = await event.get_reply_message()
     query = event.text[7:]
-    AyiinBot = await bot.get_me()
-    BOT_USERNAME = AyiinBot.username
+    UputtBot = await bot.get_me()
+    BOT_USERNAME = UputtBot.username
     bot_ = BOT_USERNAME
     bot_un = bot_.replace("@", "")
     user = await event.client.get_me()
@@ -393,7 +393,7 @@ async def _(event):
                 functions.stickers.CreateStickerSetRequest(
                     user_id=OWNER_ID,
                     title=pname,
-                    short_name=f"Ayiin_{un_}_V{pack}_by_{bot_un}",
+                    short_name=f"Uputt_{un_}_V{pack}_by_{bot_un}",
                     stickers=stcrs,
                 )
             )
@@ -653,7 +653,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "stickers": f"**Plugin : **`stickers`\
+        "Stickers": f"**Plugin : **`Stickers`\
         \n\n  »  **Perintah :** `{cmd}kang` atau `{cmd}tikel` [emoji]\
         \n  »  **Kegunaan : **Balas .kang Ke Sticker Atau Gambar Untuk Menambahkan Ke Sticker Pack Mu\
         \n\n  »  **Perintah :** `{cmd}kang` [emoji] atau `{cmd}tikel` [emoji]\
