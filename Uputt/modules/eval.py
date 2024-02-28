@@ -102,7 +102,7 @@ async def _(event):
                 event.chat_id,
                 out_file,
                 force_document=True,
-                thumb="AyiinXd/resources/logo.jpg",
+                thumb="Uputt/resources/logo.jpg",
                 allow_cache=False,
                 caption=f"`{cmd}`" if len(cmd) < 998 else None,
                 reply_to=reply_to_id,
