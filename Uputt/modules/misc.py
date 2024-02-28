@@ -224,7 +224,7 @@ async def send(event):
 
 CMD_HELP.update(
     {
-        "send": f"**Plugin : **`send`\
+        "Send": f"**Plugin : **`send`\
         \n\n  »  **Perintah :** `{cmd}send` <username/id>\
         \n  »  **Kegunaan : **Meneruskan pesan balasan ke obrolan tertentu tanpa tag Forwarded from. Bisa mengirim ke Group Chat atau ke Personal Message\
     "
@@ -233,7 +233,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "random": f"**Plugin : **`random`\
+        "Random": f"**Plugin : **`random`\
         \n\n  »  **Perintah :** `{cmd}random`\
         \n  »  **Kegunaan : **Dapatkan item acak dari daftar item. \
     "
@@ -242,9 +242,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "sleep": f"**Plugin : **`sleep`\
+        "Sleep": f"**Plugin : **`sleep`\
         \n\n  »  **Perintah :** `{cmd}sleep`\
-        \n  »  **Kegunaan : **Biarkan Ayiin-Userbot tidur selama beberapa detik \
+        \n  »  **Kegunaan : **Biarkan Uputt-Userbot tidur selama beberapa detik \
     "
     }
 )
@@ -252,7 +252,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "restart": f"**Plugin : **`Restart Ayiin-Userbot`\
+        "Restart": f"**Plugin : **`Restart Uputt-Userbot`\
         \n\n  »  **Perintah :** `{cmd}restart`\
         \n  »  **Kegunaan : **Untuk Merestart userbot.\
     "
@@ -262,7 +262,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "raw": f"**Plugin : **`raw`\
+        "Raw": f"**Plugin : **`raw`\
         \n\n  »  **Perintah :** `{cmd}raw`\
         \n  »  **Kegunaan : **Dapatkan data berformat seperti JSON terperinci tentang pesan yang dibalas.\
     "
