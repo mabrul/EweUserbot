@@ -33,13 +33,13 @@ async def stext(event):
     draw = ImageDraw.Draw(image)
     fontsize = 200
     font = ImageFont.truetype(
-        "AyiinXd/ayiin/styles/ProductSans-BoldItalic.ttf",
+        "Uputt/iamuput/styles/ProductSans-BoldItalic.ttf",
         size=fontsize)
 
     while draw.multiline_textsize(sticktext, font=font) > (512, 512):
         fontsize -= 3
         font = ImageFont.truetype(
-            "AyiinXd/ayiin/styles/ProductSans-BoldItalic.ttf",
+            "Uputt/iamuput/styles/ProductSans-BoldItalic.ttf",
             size=fontsize)
 
     width, height = draw.multiline_textsize(sticktext, font=font)
