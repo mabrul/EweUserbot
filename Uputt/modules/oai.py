@@ -33,9 +33,9 @@ async def chatgpt(event):
     if not text:
         return await eod(event, "Berikan Saya sebuah text ")
 
-    ayiinevent = await eor(event, "__Searching...__")
+    uputtevent = await eor(event, "__Searching...__")
     gptresp = gen_resp(text, chat_id)
-    await eor(ayiinevent, gptresp)
+    await eor(uputtevent, gptresp)
 
 CMD_HELP.update(
     {
