@@ -107,7 +107,7 @@ async def _(d):
 
 @uputt_cmd(pattern=r"dih(?: |$)(.*)")
 async def _(y):
-    await y.reply("**DIHHH NAJISS ANAK HARAM LO GOBLOK, JANGAN BELAGU DIMARI KAGA KEREN LU KEK BGITU TOLOL!**"))
+    await y.reply("**DIHHH NAJISS ANAK HARAM LO GOBLOK, JANGAN BELAGU DIMARI KAGA KEREN LU KEK BGITU TOLOL!**")
 
 
 @uputt_cmd(pattern=r"skb(?: |$)(.*)")
