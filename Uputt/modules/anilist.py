@@ -219,7 +219,7 @@ async def anichar(event):
         if image := json.get("image", None):
             image = image.get("large")
             await event.delete()
-            await Ayiin.send_file(
+            await Uputt.send_file(
                 event.chat_id, image, caption=msg, parse_mode="md", reply_to=reply_to_id
             )
         else:
