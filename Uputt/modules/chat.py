@@ -445,7 +445,7 @@ async def get_users(event):
             event,
             "**Berikan Link Grup Chat untuk menculik membernya**"
         )
-    uputt = await eor(event, f"**Mengundang Member Dari Group {ayiin_}**")
+    uputt = await eor(event, f"**Mengundang Member Dari Group {uputt_}**")
     uputtuserbot = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
