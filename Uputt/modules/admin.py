@@ -396,9 +396,9 @@ async def gspider(gspdr):
             return
         self_user = await gspdr.client.get_me()
         if user.id == self_user.id:
-            return await ayiin.edit("**Tidak Bisa Membisukan Diri Sendiri..（>﹏<）**")
+            return await uputt.edit("**Tidak Bisa Membisukan Diri Sendiri..（>﹏<）**")
         if user.id in DEVS:
-            return await ayiin.edit("**Gagal Membisukan Global, Karna dia adalah Pembuat Saya 🤪**")
+            return await uputt.edit("**Gagal Membisukan Global, Karna dia adalah Pembuat Saya 🤪**")
         await uputt.edit("**Berhasil Membisukan Pengguna!**")
         gmuted = UputtChanger(cek_gmute(self_user.id))
         if user.id in gmuted:
