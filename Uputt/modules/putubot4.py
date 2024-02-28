@@ -102,7 +102,7 @@ async def _(x):
 
 @uputt_cmd(pattern=r"cuih(?: |$)(.*)")
 async def _(d):
-    await await d.reply("**GAK KEREN LO KEK BEGITU GOBLOK, KELUARGA LU BAWA SINI GUA LUDAHIN SATU-SATU. CUIHH!!!**")
+    await d.reply("**GAK KEREN LO KEK BEGITU GOBLOK, KELUARGA LU BAWA SINI GUA LUDAHIN SATU-SATU. CUIHH!!!**")
 
 
 @uputt_cmd(pattern=r"dih(?: |$)(.*)")
