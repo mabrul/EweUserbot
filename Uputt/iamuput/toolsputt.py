@@ -62,7 +62,7 @@ async def _try_delete(event):
     except (MessageDeleteForbiddenError):
         pass
     except BaseException as er:
-        from AyiinXd import LOGS
+        from Uputt import LOGS
 
         LOGS.error("Error while Deleting Message..")
         LOGS.exception(er)
