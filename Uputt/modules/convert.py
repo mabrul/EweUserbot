@@ -79,18 +79,18 @@ async def cevir(event):
                 "echo": '-filter_complex "aecho=0.8:0.9:500|1000:0.2|0.1"',
             }
             ses = await asyncio.create_subprocess_shell(
-                f"ffmpeg -i '{indir}' {KOMUT[efekt]} ayiin.mp3"
+                f"ffmpeg -i '{indir}' {KOMUT[efekt]} uputt.mp3"
             )
             await ses.communicate()
             await event.client.send_file(
                 event.chat_id,
-                "ayiin.mp3",
+                "uputt.mp3",
                 thumb="Uputt/resources/logo.jpg",
                 reply_to=rep_msg,
             )
             await xxx.delete()
             os.remove(indir)
-            os.remove("ayiin.mp3")
+            os.remove("uputt.mp3")
         else:
             await xxx.edit(
                 "**Efek yang Anda tentukan tidak ditemukan!**\n**Efek yang dapat Anda gunakan:** `bengek/robot/jedug/fast/echo`"
@@ -103,14 +103,14 @@ async def cevir(event):
         video = io.BytesIO()
         video = await event.client.download_media(rep_msg.video)
         gif = await asyncio.create_subprocess_shell(
-            f"ffmpeg -y -i '{video}' -vn -b:a 128k -c:a libmp3lame ayiin.mp3"
+            f"ffmpeg -y -i '{video}' -vn -b:a 128k -c:a libmp3lame uputt.mp3"
         )
         await gif.communicate()
         await xx.edit("`Mengunggah...`")
         try:
             await event.client.send_file(
                 event.chat_id,
-                "ayiin.mp3",
+                "uputt.mp3",
                 thumb="Uputt/resources/logo.jpg",
                 reply_to=rep_msg,
             )
@@ -118,7 +118,7 @@ async def cevir(event):
             os.remove(video)
             return await xx.edit("**Tidak dapat mengconvert ke audio! 🥺**")
         await xx.delete()
-        os.remove("ayiin.mp3")
+        os.remove("uputt.mp3")
         os.remove(video)
     else:
         await xx.edit(
@@ -139,7 +139,7 @@ async def makevoice(event):
     file = await msg.download_media(dl)
     await xxnx.edit("`Mengonversi ke Catatan Suara...`")
     await runcmd(
-        f"ffmpeg -i '{file}' -map 0:a -codec:a libopus -b:a 100k -vbr on yins.opus"
+        f"ffmpeg -i '{file}' -map 0:a -codec:a libopus -b:a 100k -vbr on putt.opus"
     )
     await event.client.send_message(
         event.chat_id, file="putt.opus", force_document=False, reply_to=msg
