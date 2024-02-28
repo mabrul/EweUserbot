@@ -122,7 +122,7 @@ async def update_restart_msg(chat_id, msg_id):
         f"**Telethon:** `{vsc}`\n"
         f"**Python:** `{python_version()}`\n"
     )
-    await Ayiin.edit_message(chat_id, msg_id, message)
+    await Uputt.edit_message(chat_id, msg_id, message)
     return True
 
 
