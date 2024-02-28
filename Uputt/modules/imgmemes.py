@@ -533,7 +533,7 @@ CMD_HELP.update(
         \n  »  **Kegunaan : **Membuat meme trapcard\
         \n\n  »  **Perintah :** `{cmd}tweet`\
         \n  »  **Kegunaan : **Membuat Tweet dari akun twitter\
-        \n  •  **Example  : **{cmd}tweet @ayiin.ganteng (harus pake . [titik])\
+        \n  •  **Example  : **{cmd}tweet @uputt.ganteng (harus pake . [titik])\
     "
     }
 )
