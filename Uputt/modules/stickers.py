@@ -380,7 +380,7 @@ async def _(event):
                 functions.stickers.CreateStickerSetRequest(
                     user_id=OWNER_ID,
                     title=pname,
-                    short_name=f"Ayiin_{un_}_V{pack}_by_{bot_un}",
+                    short_name=f"Uputt_{un_}_V{pack}_by_{bot_un}",
                     stickers=stcrs,
                 )
             )
