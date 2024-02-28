@@ -91,8 +91,7 @@ async def uputt(ganteng):
 
 @register(incoming=True, from_users=DEVS, pattern=r"^kimak$")
 async def tes(sigoblok):
-    await sigoblok.respond('🗿')
-    await sigoblok.types.SendMessageReaction(emoji='👍')
+    await sigoblok.SendMessageReaction('👍')
 
 # ========================×========================
 #            Jangan Hapus Credit Ngentod
