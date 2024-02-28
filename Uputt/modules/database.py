@@ -43,7 +43,7 @@ async def db_backup(e):
     path = os.getcwd()
     reply = await e.get_reply_message()
     if 'iamuput.db' in os.listdir():
-        await xx.edit("**Database `ayiin.db` ditemukan. Menghapus `ayiin.db` Dari Directory.**")
+        await xx.edit("**Database `iamuput.db` ditemukan. Menghapus `iamuput.db` Dari Directory.**")
         os.remove('iamuput.db')
     media = reply.media
     if hasattr(media, "document"):
