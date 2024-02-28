@@ -6,7 +6,7 @@ from config import var
 
 from .logger import logging
 
-LOGS = logging.getLogger("AyiinUserBot")
+LOGS = logging.getLogger("UputtUserBot")
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36",
@@ -32,9 +32,9 @@ async def p_paste(message, extension=None):
             else f"https://pasty.lus.pm/{response['id']}.txt"
         )
         try:
-            from AyiinXd import Ayiin
+            from Uputt import Uputt
 
-            await Ayiin.send_message(
+            await Uputt.send_message(
                 var.BOTLOG_CHATID,
                 f"**You have created a new paste in pasty bin.** Link to pasty is [here]({purl}). You can delete that paste by using this token `{response['deletionToken']}`",
             )
