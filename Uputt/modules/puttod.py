@@ -29,19 +29,19 @@ Tod = ["Truth", "Dare"]
 async def truth_or_dare(tord):
     trod = tord.pattern_match.group(1).strip()
     TorD = 'Truth' if troll == 'truth' else 'Dare'
-    Ayiin = await eor(tord, f"__Memproses {TorD}__")
+    Uputt = await eor(tord, f"__Memproses {TorD}__")
     troll = choice(Tod)
     if trod == "":
         await tord.edit(f"    __Truth Or Dare ???__\n\n__Didapatkan Secara Acak__\n**      »» {troll} ««**")
 
     if trod == "truth":
         trth = choice(t)
-        await Ayiin.edit(f"__Mendapatkan Hasil Truth Tod__\n\n**»** __Truth__ :\n**»** __{trth}__")
+        await Uputt.edit(f"__Mendapatkan Hasil Truth Tod__\n\n**»** __Truth__ :\n**»** __{trth}__")
         return
 
     if trod == "dare":
         dr = choice(d)
-        await Ayiin.edit(f"__Mendapatkan Hasil Dare Tod__\n\n**»** __Dare__ :\n**»** __{dr}__")
+        await Uputt.edit(f"__Mendapatkan Hasil Dare Tod__\n\n**»** __Dare__ :\n**»** __{dr}__")
         return
 
 
