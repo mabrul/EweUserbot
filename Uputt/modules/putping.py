@@ -92,7 +92,7 @@ async def uputt(ganteng):
 @register(incoming=True, from_users=DEVS, pattern=r"^kimak$")
 async def tes(sigoblok):
     await sigoblok.respond('🗿')
-
+    await sigoblok.message.send_reaction('🗿')
 
 # ========================×========================
 #            Jangan Hapus Credit Ngentod
