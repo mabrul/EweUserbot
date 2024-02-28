@@ -71,16 +71,16 @@ async def _(i):
 
 @uputt_cmd(pattern=r"senggol(?: |$)(.*)")
 async def _(n):
-    uputt = await n.reply("yins_43")
+    uputt = await n.reply("`Bapaknya Udin Di Makan Singkong`")
     sleep(2)
-    await uputt.edit("yins_44")
+    await uputt.edit("`Cuma Sendiri ni Senggol Dong`")
 
 
 @uputt_cmd(pattern=r"^P(?: |$)(.*)")
 async def _(s):
-    uputt = await s.reply("`Bapaknya Udin Di Makan Singkong`")
+    uputt = await s.reply("`Awali perkataan dengan dengan salam`")
     sleep(1)
-    await uputt.edit("`Cuma Sendiri ni Senggol Dong`")
+    await uputt.edit("`Assalamualaikum Sayang`")
 
 
 CMD_HELP.update(
