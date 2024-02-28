@@ -52,7 +52,7 @@ async def _(n):
 
 @uputt_cmd(pattern=r"mengeluh(?: |$)(.*)")
 async def _(s):
-    uputt = await await s.reply("**Apapun Yang Terjadi...**")
+    uputt = await s.reply("**Apapun Yang Terjadi...**")
     sleep(3)
     await uputt.edit("**Tetaplah Mengeluh...**")
     sleep(1)
