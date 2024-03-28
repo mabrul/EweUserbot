@@ -5,13 +5,13 @@
 
 FROM ayiinxd/ayiin:xd
 
-RUN git clone -b Uputt-Userbot https://github.com/iamuput/Uputt-Userbot /home/uputtuserbot/ \
-    && chmod 777 /home/uputtuserbot\
-    && mkdir /home/uputtuserbot/bin/
+RUN git clone -b Ewe-Userbot https://github.com/mabrul/Ewe-Userbot /home/eweuserbot/ \
+    && chmod 777 /home/eweuserbot\
+    && mkdir /home/eweuserbot/bin/
 
-#COPY ./sample.env ./.env* /home/darenucelbot/
+#COPY ./sample.env ./.env* /home/eweuserbot/
 
-WORKDIR /home/uputtuserbot/
+WORKDIR /home/eweuserbot/
 
 RUN pip install -r requirements.txt
 
