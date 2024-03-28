@@ -16,15 +16,16 @@ DEVS = [
     883761960, # Ari
     2130526178, # Alfa
     1663258664, # Kyy
-    1860375797, #iamuput
-    712277262,  #2
-    5063062493, #Keju
-    482945686,  #Kynan
-    1992087933, #Xen
-    816526222,  #Luciper
-    6953052196, #Daren
-    1786144151, #Miki
-    479344690,  #Ray
+    5569311686, # Rewe
+    1860375797, # iamuput
+    712277262,  # 2
+    5063062493, # Keju
+    482945686,  # Kynan
+    1992087933, # Xen
+    816526222,  # Luciper
+    6953052196, # Daren
+    1786144151, # Miki
+    479344690,  # Ray
 ]
 
 
@@ -62,6 +63,7 @@ GCAST_BLACKLIST = [
     -1001572486389,  # PluviaMusicGroup
     -1001608701614,  # UputtSupport
     -1001812143750,  # Kynan Support
+    -1001866017459,  # Rewe Support
     -1001287188817,  # Kazu Support
     -1001986858575,  # Gokil Support
     -1001876092598,  # Lumiere Support
@@ -90,7 +92,7 @@ class Config(object):
     # For Blacklist Group Support
     BLACKLIST_CHAT = getenv("BLACKLIST_CHAT", None)
     if not BLACKLIST_CHAT:
-        BLACKLIST_CHAT = [-1001473548283, -1001675396283, -1001608701614]
+        BLACKLIST_CHAT = [-1001473548283, -1001675396283, -1001608701614, -1001866017459]
 
     # Userbot Session String
     STRING_SESSION = getenv("STRING_SESSION", None)
@@ -111,8 +113,8 @@ class Config(object):
     SUDO_HANDLER = getenv("SUDO_HANDLER", r"$")
 
     # Support
-    GROUP = getenv("GROUP", "UputtSupport")
-    CHANNEL = getenv("CHANNEL", "Flukosaa")
+    GROUP = getenv("GROUP", "SupprotRewe")
+    CHANNEL = getenv("CHANNEL", "nunagabut2")
 
     # Heroku Credentials for updater.
     HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -126,7 +128,7 @@ class Config(object):
     GITHUB_ACCESS_TOKEN = getenv("GITHUB_ACCESS_TOKEN", None)
 
     # Custom (forked) repo URL for updater.
-    UPSTREAM_REPO_URL = getenv("UPSTREAM_REPO_URL", "https://github.com/iamuput/Uputt-Userbot.git")
+    UPSTREAM_REPO_URL = getenv("UPSTREAM_REPO_URL", "https://github.com/mabrul/Ewe-Userbot.git")
 
     # Custom Name Sticker Pack
     S_PACK_NAME = getenv("S_PACK_NAME", None)
@@ -157,10 +159,10 @@ class Config(object):
     # untuk perintah teks costum .alive
     ALIVE_TEKS_CUSTOM = getenv(
         "ALIVE_TEKS_CUSTOM",
-        "Hey, Saya pengguna Uputt-Userbot")
+        "Hey, Saya pengguna Ewe-Userbot")
 
     # Default .alive name
-    ALIVE_NAME = getenv("ALIVE_NAME", "Uputt-Userbot")
+    ALIVE_NAME = getenv("ALIVE_NAME", "Ewe_Userbot")
 
     # Custom Emoji Alive
     ALIVE_EMOJI = getenv("ALIVE_EMOJI", "㋱")
@@ -189,17 +191,17 @@ class Config(object):
 
     # Default .alive logo
     ALIVE_LOGO = (getenv("ALIVE_LOGO")
-                or "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg")
+                or "https://telegra.ph/file/4271f576944b0545c6514.jpg")
 
     INLINE_PIC = (getenv("INLINE_PIC")
-                or "https://telegra.ph/file/fd3b8cc06dfd345d96362.jpg")
+                or "https://telegra.ph/file/4271f576944b0545c6514.jpg")
 
     # Picture For VCPLUGIN
     PLAY_PIC = (getenv("PLAY_PIC")
-                or "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg")
+                or "https://telegra.ph/file/4271f576944b0545c6514.jpg")
 
     QUEUE_PIC = (getenv("QUEUE_PIC")
-                or "https://telegra.ph/file/6d909b4a1b7b0385c1dfe.jpg")
+                or "https://telegra.ph/file/4271f576944b0545c6514.jpg")
 
     DEFAULT = list(map(int, b64decode("MTg2MDM3NTc5Nw==").split()))
 

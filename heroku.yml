@@ -1,5 +1,5 @@
 build: 
   docker:
-      iamuput: Dockerfile
+      ewe: Dockerfile
 run:
-   iamuput: bash start
+   ewe: bash start

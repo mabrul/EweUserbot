@@ -1,9 +1,9 @@
 {
-  "name": "Uputt-Userbot",
-  "description": "[Uputt-Userbot] Selamat pakai, Luh songong gw Cipok",
-  "logo": "https://telegra.ph/file/f4c1d8888bf604781c163.jpg",
-  "keywords": ["telegram", "userbot", "Uputt-Userbot", "modular", "python"],
-  "repository": "https://github.com/iamuput/Uputt-Userbot",
+  "name": "Ewe-Userbot",
+  "description": "[Ewe-Userbot] Selamat pakai, Luh songong gw Cipok",
+  "logo": "https://telegra.ph/file/4271f576944b0545c6514.jpg",
+  "keywords": ["telegram", "userbot", "Ewe-Userbot", "modular", "python"],
+  "repository": "https://github.com/mabrul/Ewe-Userbot",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -15,7 +15,7 @@
       "required": true
     },
     "STRING_SESSION": {
-      "description": "Dapatkan String Session di Grup » https://t.me/UputtSupport » Lalu ketik #string",
+      "description": "Dapatkan String Session di Grup » https://t.me/SupprotRewe » Lalu ketik #string",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -48,7 +48,7 @@
     }
   ],
   "formation": {
-    "iamuput": {
+    "ewe": {
       "quantity": 1,
       "size": "basic"
     }
